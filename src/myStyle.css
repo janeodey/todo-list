@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+  body{
+    background-color: #e1b382;
+    color: #fff;
+    font-size: 1.2em;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+    .App {
+      text-align: center;
+    }
+     
+    .taskBg {
+      background-color: #555;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      padding: 10px 140px 10px 15px;
+      text-align: left;
+      font-size: 22px;
+      position: relative;
+      min-width: 450px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 3px 6px;
+    } 
+
+    
+    .taskBg div {
+      display: flex;
+      align-items: center;
+    }
+    
+    .taskNumber {
+      color: #fff;
+      border: 1px solid #999;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      text-align: center;
+      font-size: 18px;
+      margin-right: 8px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    
+    .taskBg .done .taskText {
+      text-decoration: line-through;
+      opacity: 0.3;
+    }
+    
+    .taskBg .iconsWrap {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+      width: auto;
+      display: inline-block;
+    }
+    
+    .taskBg .iconsWrap span {
+      display: inline-block;
+      margin: 0px 10px 0 10px;
+      cursor: pointer;
+      color: #00ff89;
+    }
+    
+
+    /* input part */
+  
+    .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input_text{
+        padding: 16px 24px;
+        width: 300px;
+        margin: 0 12px;
+        font-size: 1.2em;
+    }
+    /* .update_div_btn{
+
+    } */
+
+    .cancel_btn, .update_btn, .add_btn{
+        padding: 16px 24px;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    .update_btn, .add_btn{
+        background-color: green
+    }
+    .cancel_btn{
+        background-color: orangered;
+    }
+   .fa-trash{
+    color: red;
+   }
+   .fa-edit{
+    color: orange;
+   }
+   .fa-check-circle{
+    color: rgb(90, 221, 90);
+   }
