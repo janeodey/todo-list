@@ -8,7 +8,7 @@ const TodoList = ({ toDo, markDone, setUpdateData, deleteTask }) => {
       .map( (task, index) => {
         return(
           <div key={task.id} className="realcontent">
-            <div className="col taskBg">
+            <div className="taskBg">
               <div className={ task.status ? 'done' : '' }>
                 <span className="taskNumber">{index + 1}</span>
                 <span className="taskText">{task.title}</span>

@@ -3,7 +3,7 @@ const UpdateForm = ({ updateData, changeTask, updateTask, cancelUpdate }) => {
       <>
         {/* Update Task */}
         <div className="row">
-          <div className="col">
+          <div>
             <input 
               value={ updateData && updateData.title }
               onChange={ (e) => changeTask(e)}

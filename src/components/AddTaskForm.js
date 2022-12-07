@@ -1,8 +1,11 @@
-const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
+const AddTaskForm = (props) => {
+    const newTask = props.newTask;
+    const setNewTask = props.setNewTask;
+    const addTask = props.addTask
     return(
       <div>
         <div style={newStyle}>
-          <div className="col">
+          <div>
             <input 
               value={newTask}
               onChange={ (e) => setNewTask(e.target.value)}
@@ -22,7 +25,8 @@ const AddTaskForm = ({ newTask, setNewTask, addTask }) => {
   }
 
   const newStyle = {
-    margin:"20px 0"
+    margin:"20px 0",
+    display:"flex"
   }
   
   export default AddTaskForm;

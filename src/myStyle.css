@@ -89,6 +89,8 @@
         width: 300px;
         margin: 0 12px;
         font-size: 1.2em;
+        outline: none;
+        border: none;
     }
     /* .update_div_btn{
 
